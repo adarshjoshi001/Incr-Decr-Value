@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import Button from '@material-ui/core/Button';
 
 const Todo = () => {
 
@@ -25,8 +28,8 @@ const Todo = () => {
                 <div className="center_div">
                     <h1> {num}</h1>
                     <div className="btn_div">
-                        <button onClick={IncrNum}>  Increase  </button>
-                        <button onClick={DecrNum}> Decrease </button>
+                        <Button onClick={IncrNum} className="btn_green">  < AddCircleOutlineIcon />  </Button>
+                        <Button onClick={DecrNum} className="btn_red"> <DeleteForeverIcon /> </Button>
                     </div>
                 </div>
 
